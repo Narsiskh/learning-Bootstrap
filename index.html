@@ -875,9 +875,311 @@
         <button type="button" class="btn btn-primary btn-sm">Small</button>
     </div>
 
-<div class="d-grid">
-    <button type="button" class="btn btn-primary btn-block" >Full-Width Button</button>
+    <div class="container mt-3">
+        <h2>Block Level Buttons</h2>
+        <p>To create a block level button that spans the entire width of the parent element, use the .d-grid "helper" class on the parent element:</p>
+        <div class="d-grid">
+            <button type="button" class="btn btn-primary btn-block" >Full-Width Button</button>
+        </div>
+    </div>
+
+<div class="container mt-3">
+    <h2>Button States</h2>
+    <button type="button" class="btn btn-primary active">Active Primary</button>
+    <button type="button" class="btn btn-primary" disabled>Disabled Primary</button>
+    <a href="#" class="btn btn-primary disabled">Disabled Link</a>
 </div>
 
+    <div class="container mt-3">
+        <h2>Spinner Buttons</h2>
+        <p>Add spinners to buttons:</p>
+        <button class="btn btn-primary">
+            <span class="spinner-border spinner-border-sm"></span>
+        </button>
+
+        <button class="btn btn-primary">
+            <span class="spinner-border spinner-border-sm"></span>
+            Loading..
+        </button>
+
+        <button class="btn btn-primary" disabled>
+            <span class="spinner-border spinner-border-sm"></span>
+            Loading..
+        </button>
+
+        <button class="btn btn-primary" disabled>
+            <span class="spinner-grow spinner-grow-sm"></span>
+            Loading..
+        </button>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Button Group</h2>
+        <p>The .btn-group class creates a button group:</p>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary">Apple</button>
+            <button type="button" class="btn btn-primary">Samsung</button>
+            <button type="button" class="btn btn-primary">Sony</button>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Vertical Button Group</h2>
+        <p>Use the .btn-group-vertical class to create a vertical button group:</p>
+        <div class="btn-group-vertical">
+            <button type="button" class="btn btn-primary">Apple</button>
+            <button type="button" class="btn btn-primary">Samsung</button>
+            <button type="button" class="btn btn-primary">Sony</button>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Nesting Button Groups</h2>
+        <p>Nest button groups to create dropdown menus:</p>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary">Apple</button>
+            <button type="button" class="btn btn-primary">Samsung</button>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Sony</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Tablet</a></li>
+                    <li><a class="dropdown-item" href="#">Smartphone</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Badges</h2>
+        <h1>Example heading <span class="badge bg-secondary">New</span></h1>
+        <h2>Example heading <span class="badge bg-secondary">New</span></h2>
+        <h3>Example heading <span class="badge bg-secondary">New</span></h3>
+        <h4>Example heading <span class="badge bg-secondary">New</span></h4>
+        <h5>Example heading <span class="badge bg-secondary">New</span></h5>
+        <h6>Example heading <span class="badge bg-secondary">New</span></h6>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Contextual Badges</h2>
+        <span class="badge bg-primary">Primary</span>
+        <span class="badge bg-secondary">Secondary</span>
+        <span class="badge bg-success">Success</span>
+        <span class="badge bg-danger">Danger</span>
+        <span class="badge bg-warning">Warning</span>
+        <span class="badge bg-info">Info</span>
+        <span class="badge bg-light">Light</span>
+        <span class="badge bg-dark">Dark</span>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Pill Badges</h2>
+        <span class="badge rounded-pill bg-primary">Primary</span>
+        <span class="badge rounded-pill bg-secondary">Secondary</span>
+        <span class="badge rounded-pill bg-success">Success</span>
+        <span class="badge rounded-pill bg-danger">Danger</span>
+        <span class="badge rounded-pill bg-warning">Warning</span>
+        <span class="badge rounded-pill bg-info">Info</span>
+        <span class="badge rounded-pill bg-light">Light</span>
+        <span class="badge rounded-pill bg-dark">Dark</span>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Badge inside a Button</h2>
+        <button type="button" class="btn btn-primary">
+            Messages <span class="badge btn-danger">4</span>
+        </button>
+        <button type="button" class="btn btn-danger">
+            Notification <span class="badge bg-dark">7</span>
+        </button>
+    </div>
+
+    <div class="container mt-3 row mx-auto gap-3">
+        <h2>Basic Progress Bar</h2>
+        <p>To create a default progress bar, add a .progress class to a container element and add the progress-bar class to its child element. Use the CSS width property to set the width of the progress bar:</p>
+        <div class="progress">
+            <div class="progress-bar" style="width:20%"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" style="width:50%"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" style="width:90%"></div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Progress Bar Height</h2>
+        <p>The height of the progress bar is 1rem (16px) by default. Use the CSS height property to change the height:</p>
+        <div class="progress" style="height:10px">
+            <div class="progress-bar" style="width:40%;"></div>
+        </div>
+        <br>
+        <div class="progress" style="height:20px">
+            <div class="progress-bar" style="width:50%;"></div>
+        </div>
+        <br>
+        <div class="progress" style="height:30px">
+            <div class="progress-bar" style="width:60%;"></div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Progress Bar With Label</h2>
+        <div class="progress">
+            <div class="progress-bar" style="width:70%">70%</div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Striped Progress Bars</h2>
+        <p>The .progress-bar-striped class adds stripes to the progress bars:</p>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped" style="width:30%"></div>
+        </div>
+        <br>
+        <div class="progress">
+            <div class="progress-bar bg-success progress-bar-striped" style="width:40%"></div>
+        </div>
+        <br>
+        <div class="progress">
+            <div class="progress-bar bg-info progress-bar-striped" style="width:50%"></div>
+        </div>
+        <br>
+        <div class="progress">
+            <div class="progress-bar bg-warning progress-bar-striped" style="width:60%"></div>
+        </div>
+        <br>
+        <div class="progress">
+            <div class="progress-bar bg-danger progress-bar-striped" style="width:70%"></div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Animated Progress Bar</h2>
+        <p>Add the .progress-bar-animated class to animate the progress bar:</p>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 40%"></div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Multiple Progress Bars</h2>
+        <p>Create a stacked progress bar by placing multiple bars into the same div with class="progress":</p>
+        <div class="progress">
+            <div class="progress-bar bg-success" style="width:40%">
+                Free Space
+            </div>
+            <div class="progress-bar bg-warning" style="width:10%">
+                Warning
+            </div>
+            <div class="progress-bar bg-danger" style="width:20%">
+                Danger
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Spinners</h2>
+        <p>To create a spinner/loader, use the <code>.spinner-border</code> class:</p>
+
+        <div class="spinner-border"></div>
+        <div class="spinner-border text-muted"></div>
+        <div class="spinner-border text-primary"></div>
+        <div class="spinner-border text-success"></div>
+        <div class="spinner-border text-info"></div>
+        <div class="spinner-border text-warning"></div>
+        <div class="spinner-border text-danger"></div>
+        <div class="spinner-border text-secondary"></div>
+        <div class="spinner-border text-dark"></div>
+        <div class="spinner-border text-light"></div>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Growing Spinners</h2>
+        <p>Use the <code>.spinner-grow</code> class if you want the spinner/loader to grow instead of "spin":</p>
+
+        <div class="spinner-grow text-muted"></div>
+        <div class="spinner-grow text-primary"></div>
+        <div class="spinner-grow text-success"></div>
+        <div class="spinner-grow text-info"></div>
+        <div class="spinner-grow text-warning"></div>
+        <div class="spinner-grow text-danger"></div>
+        <div class="spinner-grow text-secondary"></div>
+        <div class="spinner-grow text-dark"></div>
+        <div class="spinner-grow text-light"></div>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Spinner Size</h2>
+        <p>Use <code>.spinner-border-sm</code> or <code>.spinner-grow-sm</code> to create a smaller spinner:</p>
+
+        <div class="spinner-border spinner-border-sm"></div>
+        <div class="spinner-grow spinner-grow-sm"></div>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Pagination</h2>
+        <p>To create a basic pagination, add the .pagination class to an ul element. Then add the .page-item to each li element and a .page-link class to each link inside li:</p>
+        <ul class="pagination pagination-lg">
+            <li class="page-item disabled"><a class="page-link" href="#">Pervious</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item active"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Pagination</h2>
+        <p>Use utilitiy classes to change the alignment of the pagination:</p>
+        <!-- Default (left-aligned) -->
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+            <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+            <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+        </ul>
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+            <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+            <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+        </ul>
+        <ul class="pagination justify-content-end">
+            <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+            <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+            <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+        </ul>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Breadcrumbs</h2>
+        <p>The .breadcrumb class indicates the current page's location within a navigational hierarchy:</p>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Photos</a></li>
+            <li class="breadcrumb-item"><a href="#">Summer 2017</a></li>
+            <li class="breadcrumb-item"><a href="#">Italy</a></li>
+            <li class="breadcrumb-item active">Rome</li>
+        </ul>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Basic List Group</h2>
+        <ul class="list-group">
+            <li class="list-group-item active">First item</li>
+            <li class="list-group-item">Second item</li>
+            <li class="list-group-item">Third item</li>
+        </ul>
+    </div>
+
+    <div class="container mt-3">
+        <h2>List Group With Linked Items</h2>
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">First item</a>
+            <a href="#" class="list-group-item list-group-item-action">Second item</a>
+            <a href="#" class="list-group-item list-group-item-action">Third item</a>
+        </div>
+    </div>
 </body>
 </html>
